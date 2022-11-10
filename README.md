@@ -8,19 +8,19 @@
 #### Baixe o projeto no Github, de preferência na branch do Vídeo 1 do Agilizei:
 - Branch do vídeo 1: `https://github.com/samlucax/youtube-cypress/tree/video1`
 
-1.No diretorio principal do seu projeto, instalar as dependências e abrir o Cypress Runner:
+1. No diretorio principal do seu projeto, instalar as dependências e abrir o Cypress Runner:
   - `npm init --yes`
   - `npm install -D cypress@4.1`
   - `./node_modules/.bin/cypress open`
 
-2.Acessar o diretório backend, instalar as dependências e iniciar a api:
+2. Acessar o diretório backend, instalar as dependências e iniciar a api:
   - `cd backend` 
   - depois `npm install`
   - depois `npm start`
 
 OBS.: Caso dê erro para rodar o back-end, você pode resolver aqui: `https://github.com/samlucax/youtube-cypress/issues/18`
 
-3.Acessar o diretório frontend, instalar as dependências e iniciar o site:
+3. Acessar o diretório frontend, instalar as dependências e iniciar o site:
   - `cd frontend`
   - depois `npm install`
   - depois `npm start`
