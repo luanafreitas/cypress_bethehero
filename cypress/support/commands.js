@@ -42,3 +42,31 @@ Cypress.Commands.add("createOng", () => {
         Cypress.env('createOngId', response.body.id);
     });
 })
+
+Cypress.Commands.add('createNewIncident', () => {
+    cy.request({
+        method: 'POST',
+        url: 'http://localhost:3333/incidents',
+        headers: { 'Authorization': `${ Cypress.env('createOngId')}`, },
+        body: {
+            title: "petsdogs",
+            description: "Animal precisa de apoio para ter uma moradia.",
+            value: "200",
+        }
+    }).then(response => {
+        expect(response.body.id).is.not.null;
+        cy.log(response.body.id);
+
+        Cypress.env('createIncidentId', response.body.id);
+    })
+})
+
+Cypress.Commands.add('login', () => {
+    cy.visit('http://localhost:3000/profile', {
+            onBeforeLoad: (browser) => {
+                browser.localStorage.setItem('ongId', Cypress.env('createOngId'))
+                browser.localStorage.setItem('ongName', 'petsdogs');
+            }
+            // onBeforeLoad: antes da página carregar, interaja com (browser)
+        });
+})

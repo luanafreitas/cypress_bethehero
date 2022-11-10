@@ -14,7 +14,7 @@ export default function Logon() {
 
   const history = useHistory()
 
-  async function handleLogin(e){
+  async function handleLogin(e) {
     e.preventDefault();
 
     try {
@@ -36,20 +36,26 @@ export default function Logon() {
       <section className="form">
         <img src={logoImg} alt="Be The Hero " />
 
-        <form onSubmit={ handleLogin }>
+        <form onSubmit={handleLogin}>
           <h1>Faça seu logon</h1>
 
-          <input 
+          <input
             placeholder="Sua ID"
             value={id}
             onChange={e => setId(e.target.value)}
+            data-cy="id"
           />
 
-          <button className="button" type="submit" >Entrar</button>
+          <button
+            className="button"
+            type="submit"
+            data-cy="button-login"
+          >Entrar</button>
+
 
           <Link className="back-link" to="/register">
-              <FiLogIn size={16} color="#E02041" />
-              Não tenho cadastro
+            <FiLogIn size={16} color="#E02041" />
+            Não tenho cadastro
           </Link>
 
         </form>

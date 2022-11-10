@@ -4,7 +4,7 @@
   "description": "<h1 align=\"center\">Aplicando conhecimentos de cypress com:</h1>\r <p align=\"center\">\"Cypress: do zero ao reporte: Um projeto para aprender sobre o Cypress no Youtube\"</p>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open"
   },
   "keywords": [],
   "author": "",
