@@ -3,7 +3,7 @@
 
 ------------
 
-# Como configurar o projeto
+## Como configurar o projeto
 
 #### Baixe o projeto no Github, de preferência na branch do Vídeo 1 do Agilizei:
 - Branch do vídeo 1: `https://github.com/samlucax/youtube-cypress/tree/video1`
@@ -25,7 +25,7 @@ OBS.: Caso dê erro para rodar o back-end, você pode resolver aqui: `https://gi
   - depois `npm install`
   - depois `npm start`
 
-# Como configurar o Allure para gerar Relatórios dos testes:
+## Como configurar o Allure para gerar Relatórios dos testes:
 
 1. Instalar Allure Commandline 
 Nome: allure-commandline
